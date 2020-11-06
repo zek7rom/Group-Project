@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #5f5f5f;
+    margin-bottom: 25px;
+}
+
+.thelogo {
+    color: rgba(255, 255, 255, 0.904);
+    font-size: 21px;
+    font-family: 'Caveat', cursive;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px black;
+    text-decoration: none;
+}
+
+.web-nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 35%;  
+}
+
+.web-nav-links li {
+    position: relative;
+}
+
+.web-nav-links a {
+    color: rgba(255, 255, 255, 0.904); 
+    font-family: 'Caveat', cursive;
+    font-size: 120%;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.web-nav-links a:hover { 
+    color: black;
+}
+
+.web-nav-links a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: cornsilk;
+
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+
+    transition: all ease-in-out 220ms;
+}
+
+.web-nav-links a:hover::before {
+    width: 100%;
+}
+
+.home-title {
+    font-size: 15px;
+    padding-left: 190px;
+    padding-right: 218px;
+}
+
+.home-title h1 {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 50px;
+}
+
+.home-title h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.home-title p {
+    font-size: 22px;
+    padding-right: 300px;
+    line-height: 30px;
+    font-family: 'EB Garamond', serif;
+
+    
+}
+
+.home-title img {
+    height: 48%;
+    width: 48%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.sidebar {
+    float: right;
+    width: 25%;
+    background: rgb(175, 172, 172);
+    color: #fff;
+    box-sizing: border-box;
+    padding-bottom: 350px;
+    padding-right: 70px;
+    margin-top: 100px;
+    margin-right: 42px;
+    border-radius: 10px;  
+}
+
+.sidebar h2 {
+   padding-top: 30px;
+   padding-left: 52px;
+   font-family: 'Zilla Slab', serif;
+   font-size: 21px;
+}
+
+.sidebar img {
+    width: 120%;
+    height: 170%;
+    padding-left: 25px;
+    padding-right: 10px;
+}

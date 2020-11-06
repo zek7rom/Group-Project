@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #5f5f5f;
+    margin-bottom: 25px;
+}
+
+.thelogo {
+    color: rgba(255, 255, 255, 0.904);
+    font-size: 21px;
+    font-family: 'Caveat', cursive;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px black;
+    text-decoration: none;
+}
+
+.web-nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 35%;  
+}
+
+.web-nav-links li {
+    position: relative;
+}
+
+.web-nav-links a {
+    color: rgba(255, 255, 255, 0.904); 
+    font-family: 'Caveat', cursive;
+    font-size: 120%;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.web-nav-links a:hover { 
+    color: black;
+}
+
+.web-nav-links a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: cornsilk;
+
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+
+    transition: all ease-in-out 220ms;
+}
+
+.web-nav-links a:hover::before {
+    width: 100%;
+}
+
+.home-title {
+    font-size: 15px;
+    padding-left: 300px;
+   
+
+}
+
+.home-title h1 {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 50px;
+    padding-left:108px;
+}
+
+.home-title h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding-left: 178px;
+}
+.home-title p {
+    font-size: 22px;
+    padding-right: 360px;
+    line-height: 30px;
+    font-family: 'EB Garamond', serif;   
+}
+
+.home-title img {
+    height: 48%;
+    width: 48%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 72px;
+}
+
+.home-title a {
+    font-size: 21px;
+}
+
+
